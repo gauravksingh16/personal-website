@@ -1,56 +1,36 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const canvasContainer = document.querySelector(".threed");
-    const canvas = document.getElementById("canvas");
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.159.0/build/three.min.js';
+// Your Three.js scene setup code goes here
+// ...
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+const renderer = new THREE.WebGLRenderer();
 
-    if (canvasContainer && canvas) {
-        const renderer = new THREE.WebGLRenderer({ canvas });
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
 
-        // Set up GSAP and ScrollTrigger
-        gsap.registerPlugin(ScrollTrigger);
+// Add your scene objects and configurations here
 
-        // Load GLB model using GLTFLoader
-        const loader = new THREE.GLTFLoader();
-        let avatar;
+// Create a cube geometry
+const geometry = new THREE.BoxGeometry(1, 1, 1);
 
-        loader.load("../images/gaurav3d.glb", (gltf) => {
-            avatar = gltf.scene;
+// Create a material for the cube
+const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
 
-            // Adjust the initial position and scale of the model as needed
-            avatar.scale.set(1, 1, 1);
-            avatar.position.set(0, 0, 0);
+// Create a mesh using the geometry and material
+const cube = new THREE.Mesh(geometry, material);
 
-            scene.add(avatar);
+// Add the cube to the scene
+scene.add(cube);
 
-            // Initial animation
-            gsap.fromTo(avatar.scale, { x: 0, y: 0, z: 0 }, { x: 1, y: 1, z: 1, duration: 1, ease: "power2.out" });
-        });
+// Position the camera
+camera.position.z = 5;
 
-        // ScrollTrigger animation
-        ScrollTrigger.create({
-            trigger: canvasContainer,
-            start: "top center",
-            end: "bottom center",
-            onEnter: () => gsap.to(avatar.position, { x: window.innerWidth / 2, duration: 1, ease: "power2.out" }),
-        });
+// Render the scene
+function animate() {
+    requestAnimationFrame(animate);
+    renderer.render(scene, camera);
+}
+animate();
 
-        // Animation loop
-        function animate() {
-            requestAnimationFrame(animate);
+// ...
 
-            // Your custom animation logic here
-
-            renderer.render(scene, camera);
-        }
-
-        // Handle window resize
-        window.addEventListener("resize", () => {
-            camera.aspect = window.innerWidth / window.innerHeight;
-            camera.updateProjectionMatrix();
-            renderer.setSize(window.innerWidth, window.innerHeight);
-        });
-
-        animate();
-    }
-});
