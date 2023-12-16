@@ -5,46 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="themetoggle.css">
+    <link rel="stylesheet" href="threed.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome CSS -->
     <title>Gaurav K Singh</title>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
-    <Header>
-    <nav>
-        <div class="navbar-left">
-            <a href="#" class="logo">gauravksingh</a>
+    <Header class="fixed-top">
+        <div class="progress-container fixed-top">
+            <span class="progress-bar"></span>
         </div>
-        <div class="navbar-right">
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-            </ul>
-            <button class="contact-button">Contact</button>
-            <div class="wrapper">
-                <input type="checkbox" id="hide-checkbox">
-                <label for="hide-checkbox" class="toggle">
-                  <span class="toggle-button">
-                    <span class="crater crater-1"></span>
-                    <span class="crater crater-2"></span>
-                    <span class="crater crater-3"></span>   
-                    <span class="crater crater-4"></span>
-                    <span class="crater crater-5"></span>
-                    <span class="crater crater-6"></span>
-                    <span class="crater crater-7"></span>
-                  </span>
-                  <span class="star star-1"></span>
-                  <span class="star star-2"></span>
-                  <span class="star star-3"></span>
-                  <span class="star star-4"></span>
-                  <span class="star star-5"></span>
-                  <span class="star star-6"></span>
-                  <span class="star star-7"></span>
-                  <span class="star star-8"></span>
-                </label>
+    
+        <nav>
+            <div class="navbar-left">
+                <a href="#" class="logo">gauravksingh</a>
             </div>
-        </div>
-    </nav>
+            <div class="navbar-right">
+                <ul class="nav-links">
+                    <li><a href="#">About Me</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Projects <span class="caret"><i class="fa fa-caret-down"></i></span></a> <!-- Caret down icon -->
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Project 1</a></li>
+                            <li><a href="#">Project 2</a></li>
+                            <li><a href="#">Project 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+                <button class="contact-button">Contact</button>
+                <div class="wrapper">
+                    <input type="checkbox" id="hide-checkbox">
+                    <label for="hide-checkbox" class="toggle">
+                      <span class="toggle-button">
+                        <span class="crater crater-1"></span>
+                        <span class="crater crater-2"></span>
+                        <span class="crater crater-3"></span>   
+                        <span class="crater crater-4"></span>
+                        <span class="crater crater-5"></span>
+                        <span class="crater crater-6"></span>
+                        <span class="crater crater-7"></span>
+                      </span>
+                      <span class="star star-1"></span>
+                      <span class="star star-2"></span>
+                      <span class="star star-3"></span>
+                      <span class="star star-4"></span>
+                      <span class="star star-5"></span>
+                      <span class="star star-6"></span>
+                      <span class="star star-7"></span>
+                      <span class="star star-8"></span>
+                    </label>
+                </div>
+            </div>
+        </nav>
     </Header>
+    <div class="threed">
+        <canvas id="canvas">
+        </canvas>
+    </div>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.159.0/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js"></script>
+    <script src="threed.js"></script>
 </body>
 </html>

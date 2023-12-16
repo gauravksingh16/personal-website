@@ -1,0 +1,15 @@
+.threed {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    perspective: 800px;
+    perspective-origin: 50% 50%;
+    transform-style: preserve-3d;
+    overflow: hidden;
+}
+
+#canvas {
+    width: 100%;
+    height: 100vh;
+}
+
