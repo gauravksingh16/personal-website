@@ -1,0 +1,30 @@
+html {
+    scroll-behavior: smooth;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;  
+    background: transparent; 
+}
+
+body {
+    background: linear-gradient(to left, #1a1a2e, #16213e);
+    margin: 0;
+    padding: 0;
+    height: 200vh;
+    cursor: url('/images/crosshair-white.png'), auto;
+}
+
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+
+

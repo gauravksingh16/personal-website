@@ -153,6 +153,22 @@ nav {
   border-radius: 1rem;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-5px) scale(1.1);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+.navbar-menu li a:hover i:not(.fa-caret-down) {
+  animation: bounce 0.6s ease-in-out;
+}
+
 @media screen and (max-width: 890px) {
   nav {
     padding: 10px 20px;
@@ -215,4 +231,6 @@ nav {
   }
   
 }
+
+
 
