@@ -9,3 +9,5 @@ function clickEffect(e){
 }
 
 document.addEventListener('click',clickEffect);
+
+window.addEventListener('load', function() {  window.scroll(0, 0) })

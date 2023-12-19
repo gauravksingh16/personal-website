@@ -3,8 +3,8 @@ nav {
   height: 3rem;
   justify-content: space-between;
   align-items: center;
-  background: rgba(89, 95, 255, 0.118);
-  backdrop-filter: blur(25px);
+  background: rgba(89, 95, 255, 0.12);
+  backdrop-filter: blur(2rem);
   box-shadow: 1px 0px 1px #1a1a2e;
   padding: 10px 40px;
 }
