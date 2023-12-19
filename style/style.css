@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     height: 200vh;
-    cursor: url('/images/crosshair-white.png'), auto;
+    cursor: url('../images/crosshair-white.png'), auto;
 }
 
 
