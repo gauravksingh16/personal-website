@@ -214,8 +214,9 @@ nav {
     transition: 0.3s;
   }
 
-  .navbar-items {
-    margin: 0.5rem 0;
+  .navbar-menu li {
+    /* margin: 0.5rem 0; */
+    padding: 0.5rem 0;
   }
 
   .navbar-menu.active {
@@ -229,7 +230,24 @@ nav {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  
+
+  .dropdown-menu {
+    position: relative;
+    width: 100%;
+    padding: 0;
+  }
+
+  .navbar-menu li{
+    width: 100%;
+  }
+
+  .navbar-menu li a:hover::after {
+    transform: scaleX(0);
+  }
+  .navbar-menu li:hover {
+    background: rgba(89, 95, 255, 0.118);
+  }
+
 }
 
 
