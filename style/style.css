@@ -13,7 +13,7 @@ body {
     background: linear-gradient(to left, #1a1a2e, #16213e);
     margin: 0;
     padding: 0;
-    height: 200vh;
+    min-height: 100vh;
     cursor: url('https://gauravksingh16.github.io/personal-website/images/crosshair-white.png'), auto;
 }
 

@@ -26,7 +26,6 @@ window.addEventListener('resize', () => {
     if (wasMobile && !isMobile) {
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
-        dropMenu.classList.remove("active");
     }
 });
 

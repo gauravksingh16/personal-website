@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Rock+Salt|Shadows+Into+Light|Cedarville+Cursive');
+
 nav {
   display: flex;
   height: 3rem;
@@ -14,7 +16,7 @@ nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.5rem;
-  font-family: "DM Sans Serif", sans-serif;
+  font-family: 'Rock Salt', cursive;
   font-weight: bold;
   font-style: italic;
   transition: background 0.3s ease;
@@ -35,7 +37,7 @@ nav {
   gap: 1rem;
 }
 
-.navbar-right .contact-button {
+/* .navbar-right .contact-button {
   background: linear-gradient(45deg, #ff6ec4, #7873f5);
   border: none;
   color: white;
@@ -45,10 +47,28 @@ nav {
   box-shadow: 0 2px 5px rgba(255, 110, 193, 0.2);
   font-weight: 700;
   transition: background 0.3s ease;
+} */
+
+.navbar-right .contact-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 0;
+  text-decoration: none;
+  border-radius: 25px;
+  background: linear-gradient(225deg, #ff6ec466, #7773f5);
+  box-shadow: 0 2px 5px rgba(255, 110, 193, 0.2);
+  backdrop-filter: blur(30px);
+  color: rgba(255,255,255);
+  cursor: pointer;
+  font-weight: 700;
+  transition: background 0.3s ease;
+  text-transform: uppercase;
 }
 
 .navbar-right .contact-button:hover {
-  background: linear-gradient(225deg, #ff6ec4, #7873f5);
+  background: linear-gradient(225deg, #ff6ec4, #7773f566);
+  transition: width 2s linear 1s;
+
 }
 
 /* nav ul */
@@ -75,9 +95,14 @@ nav {
   display: block;
 }
 
-.navbar-menu li a::after {
+.navbar-menu li:not(.active) a {
+  color: rgba(255, 255, 255, 0.475);
+}
+
+.navbar-menu li:not(.active) a::after {
   content: "";
   position: absolute;
+  border-radius: 25px;
   bottom: -2px;
   left: 0;
   width: 100%;
@@ -87,8 +112,24 @@ nav {
   transition: transform 0.3s ease;
 }
 
-.navbar-menu li a:hover::after {
+.navbar-menu li:not(.active) a:hover::after {
   transform: scaleX(1);
+}
+
+.navbar-menu li:not(.active) a:hover {
+  color: white;
+}
+
+.navbar-menu li.active a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  border-radius: 25px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #ff6ec4, #7873f5);
+  transition: transform 0.3s ease;
 }
 
 .dropdown {
