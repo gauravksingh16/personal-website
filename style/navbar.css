@@ -15,7 +15,7 @@ nav {
   background: linear-gradient(45deg, #ff6ec4, #7873f5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: 'Rock Salt', cursive;
   font-weight: bold;
   font-style: italic;
@@ -37,17 +37,6 @@ nav {
   gap: 1rem;
 }
 
-/* .navbar-right .contact-button {
-  background: linear-gradient(45deg, #ff6ec4, #7873f5);
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(255, 110, 193, 0.2);
-  font-weight: 700;
-  transition: background 0.3s ease;
-} */
 
 .navbar-right .contact-button {
   display: inline-block;
