@@ -10,8 +10,16 @@
     <link rel="stylesheet" href="style/threed.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome CSS -->
     <title>Gaurav K Singh</title>
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+          }
+        }
+    </script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script type="module" src="script/threed.js"></script>
     <script src="script/script.js"></script>
     
 </head>
@@ -64,7 +72,7 @@
                         </ul>
                     </li>
                     <li class="navbar-items"><a href="#about" class="navbar-link"><i class="fa fa-book"></i>  Blogs</a></li>
-                    <li class="navbar-items"><button class="contact-button">Contact Me</button></li>
+                    <li class="navbar-items"><button class="contact-button">Contact Me<span></span></button></li>
                 </ul>
                 <div class="hamburger">
                     <span class="bar"></span>
@@ -75,9 +83,11 @@
         </nav>
 
     </Header>
-    <div class="threed-intro">
-        <canvas id="canvas"></canvas>
+    <div class="threed-intro" id="threed-intro">
+        <canvas id="threed"></canvas>
         <h1>UI/UX <br> Designer</h1>
+        <div id="radial-bg"></div>
+        <script type="module" src="script/threed.js"></script>
     </div>
     <script src="script/progressBar.js"></script>
     <script src="script/navbar.js"></script>
