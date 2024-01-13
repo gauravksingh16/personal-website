@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,8 @@
     <link rel="stylesheet" href="style/navbar.css">
     <link rel="stylesheet" href="style/themetoggle.css">
     <link rel="stylesheet" href="style/threed.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Font Awesome CSS -->
     <title>Gaurav K Singh</title>
     <script type="importmap">
         {
@@ -21,8 +23,9 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="script/script.js"></script>
-    
+
 </head>
+
 <body>
     <Header class="fixed-top">
         <div class="progress-container fixed-top">
@@ -43,7 +46,7 @@
                         <span class="toggle-button">
                             <span class="crater crater-1"></span>
                             <span class="crater crater-2"></span>
-                            <span class="crater crater-3"></span>   
+                            <span class="crater crater-3"></span>
                             <span class="crater crater-4"></span>
                             <span class="crater crater-5"></span>
                             <span class="crater crater-6"></span>
@@ -59,39 +62,64 @@
                         <span class="star star-8"></span>
                     </label>
                 </div>
-                
+
                 <ul class="navbar-menu">
-                    <li class="navbar-items active"><a href="#home" class="navbar-link"><i class="fa fa-home"></i>  Home</a></li>
-                    <li class="navbar-items"><a href="#about" class="navbar-link"><i class="fa fa-user"></i>  About Me</a></li>
+                    <li class="navbar-items active"><a href="#home" class="navbar-link"><i class="fa fa-home"></i>
+                            Home</a></li>
+                    <li class="navbar-items"><a href="#about" class="navbar-link"><i class="fa fa-user"></i> About
+                            Me</a></li>
                     <li class="dropdown navbar-items">
-                        <a href="#projects" class="dropdown-toggle"><i class="fa fa-briefcase"></i>  Projects <i class="fas fa-caret-down"></i></a>
+                        <a href="#projects" class="dropdown-toggle"><i class="fa fa-briefcase"></i> Projects <i
+                                class="fas fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#" class="dropdown-link">Project 1</a></li>
                             <li><a href="#" class="dropdown-link">Project 2</a></li>
                             <li><a href="#" class="dropdown-link">Project 3</a></li>
                         </ul>
                     </li>
-                    <li class="navbar-items"><a href="#about" class="navbar-link"><i class="fa fa-book"></i>  Blogs</a></li>
-                    <li class="navbar-items"><button class="contact-button">Contact Me<span></span></button></li>
+                    <li class="navbar-items"><a href="#about" class="navbar-link"><i class="fa fa-book"></i> Blogs</a>
+                    </li>
                 </ul>
                 <div class="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
-            <!-- </div> -->
+                <!-- </div> -->
         </nav>
 
     </Header>
     <div class="threed-intro" id="threed-intro">
         <canvas id="threed"></canvas>
-        <h1>UI/UX <br> Designer</h1>
         <div id="radial-bg"></div>
+        <div class="content">
+            <div class="column" id="column1">
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam id hic qui nesciunt, quod deleniti possimus voluptatum,
+                    laboriosam nisi perferendis voluptas rem dicta blanditiis consectetur
+                    eos labore repellat, sint fuga.
+                </div>
+                <button class="contact-button">Contact Me<span></span></button>
+            </div>
+            <div class="column" id="column2">
+                <div class="scroll-down">
+                    <span class="left">Scroll</span>
+                    <span class="mouse"></span>
+                    <span class="right">Down</span>
+                </div>
+            </div>
+            <div class="column" id="column3">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
         <script type="module" src="script/threed.js"></script>
     </div>
     <script src="script/progressBar.js"></script>
     <script src="script/navbar.js"></script>
     <script src="script/script.js"></script>
 </body>
-</html>
 
+</html>

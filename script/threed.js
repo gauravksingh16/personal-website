@@ -22,7 +22,7 @@ renderer.setSize(sizes.width, sizes.height)
 
 const scene = new THREE.Scene()
 
-const camera = new THREE.PerspectiveCamera(35, sizes.width / sizes.height, 1, 1000)
+let camera = new THREE.PerspectiveCamera(35, sizes.width / sizes.height, 1, 1000)
 
 camera.position.set(0,0,2)
 
@@ -36,15 +36,14 @@ loader.load('model.glb', function(glb){
         animation.play();
     }
     scene.add(model)
-    model.position.x = 0.5
     model.position.y = -1.5
 }, undefined, function(error){
     console.error(error)
 })
 
-const directionalLight = new THREE.DirectionalLight(0x7873f5, 0.8)
+const directionalLight = new THREE.DirectionalLight(0x7873f5, 0.3)
 scene.add(directionalLight)
-directionalLight.position.set(-10, 0, -10)
+directionalLight.position.set(-20, 0, -20)
 directionalLight.castShadow = true
 directionalLight.shadow.camera.bottom = -12
 
@@ -81,7 +80,7 @@ function onMouseMove(event) {
     fillLight.position.copy(pos);
 
     // Adjust the rotation angle based on mouse X position
-    const rotationAngle = mouseX * Math.PI * 0.03; // You can adjust the factor to control the rotation speed
+    const rotationAngle = mouseX * Math.PI * 0.05; // You can adjust the factor to control the rotation speed
 
     // Rotate the camera or scene horizontally
     model.rotation.y = rotationAngle;
