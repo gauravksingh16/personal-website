@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap");
+
 html {
     scroll-behavior: smooth;
     overflow: scroll;
@@ -10,11 +12,11 @@ html {
 }
 
 body {
-    background: linear-gradient(to left, #1a1a2e, #16213e);
     margin: 0;
     padding: 0;
     min-height: 100vh;
     cursor: url('https://gauravksingh16.github.io/personal-website/images/crosshair-white.png'), auto; 
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -50,5 +52,16 @@ div.clickEffect{
         margin:-3.75em;
         border-width:0.015em;
     }
+}
+
+.second-section {
+    width: 100vw;
+    background: linear-gradient(to top,#16213e, #1a1a2e);
+}
+
+.third-section {
+    width: 100vw;
+    min-height: 100vh;
+    background-color:  #0000ff;
 }
 

@@ -1,16 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap");
 
 .threed-intro {
-  position: absolute;
+  /* position: absolute; */
   min-height: 100vh;
   width: 100%;
   background-size: cover;
   margin: 0;
   padding: 0;
+  background: linear-gradient(to left, #1a1a2e, #16213e);
 }
 
 #threed {
-  position: relative;
+  position: absolute;
   z-index: 2;
   width: 100vw;
   height: 100vh;
@@ -44,7 +45,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 1.25rem; /* Changed from 20px to 1.25rem */
   box-sizing: border-box;
 }
 
@@ -52,6 +53,12 @@
   width: 40%;
   align-items: flex-start;
   text-align: left;
+  gap: 2rem;
+}
+
+#column1 .button-group {
+  display: flex;
+  flex-direction: row;
   gap: 1rem;
 }
 
@@ -63,6 +70,8 @@
 
 #column3 {
   width: 40%;
+  align-items: flex-end;
+  gap: 1rem;
 }
 
 .mouse {
@@ -117,12 +126,29 @@
   font-family: "Poppins", sans-serif;
 }
 
-.contact-button {
+#column1 .action-button {
+  height: 3rem;
+  width: 3rem;
+  border: 0.0625rem solid white;
+  background: transparent;
+  border-radius: 10rem;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 0.125rem 0.3125rem rgba(255, 110, 193, 0.2);
+  backdrop-filter: blur(1.875rem);
+}
+
+#column1 .action-button:hover i {
+  transform: scale(1.2);
+}
+
+#column1 .cta-button {
   display: inline-block;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 2rem;
   border: 0.0625rem solid white;
   text-decoration: none;
-  border-radius: 1.5625rem;
+  border-radius: 4rem;
   background: transparent;
   box-shadow: 0 0.125rem 0.3125rem rgba(255, 110, 193, 0.2);
   backdrop-filter: blur(1.875rem);
@@ -134,7 +160,7 @@
   overflow: hidden;
 }
 
-.contact-button span {
+#column1 .cta-button span {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -148,13 +174,13 @@
   opacity: 0;
 }
 
-.contact-button:hover {
+#column1 .cta-button:hover {
   background: transparent;
   transition: width 2s linear 1s;
   cursor: pointer;
 }
 
-.contact-button:hover span {
+#column1 .cta-button:hover span {
   opacity: 1;
   transform: translateY(0) scale(2);
 }
@@ -172,4 +198,156 @@
     #column2 {
         order: 3;
     }
+}
+
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem; /* Changed from 8px to 0.5rem */
+}
+
+.social-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  width: 3rem; /* Changed from 64px to 4rem */
+  height: 3rem; /* Changed from 64px to 4rem */
+  text-decoration: none;
+  border-radius: 100%;
+  background: #fff;
+  text-align: center;
+}
+
+.social-button::after {
+  content: '';
+  position: absolute;
+  top: -0.0625rem; /* Changed from -1px to -0.0625rem */
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  transition: 0.3s;
+}
+
+.social-button:focus,
+.social-button:hover {
+  color: #fff;
+}
+
+.social-button:focus::after,
+.social-button:hover::after {
+  width: calc(100% + 0.125rem); /* Changed from 2px to 0.125rem */
+  height: calc(100% + 0.125rem); /* Changed from 2px to 0.125rem */
+  margin-left: calc(-50% - 0.0625rem); /* Changed from -1px to -0.0625rem */
+}
+
+.social-button i,
+.social-button svg {
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.social-button i {
+  font-size: 1.2rem; /* Changed from 1.5rem to 0.9375rem */
+}
+
+.social-button svg {
+  height: 25%; /* Changed from 40% to 25% */
+  width: 25%; /* Changed from 40% to 25% */
+}
+
+.social-button--mail {
+  color: #c71610
+}
+
+.social-button--mail::after {
+  background: #c71610
+}
+
+.social-button--behance {
+  color: #131418
+}
+
+.social-button--behance::after {
+  background: #131418
+}
+
+.social-button--medium {
+  color: #191919
+}
+
+.social-button--medium::after {
+  background: #191919
+}
+
+.social-button--phone {
+  color: #25D366
+}
+
+.social-button--phone::after {
+  background: #25D366
+}
+
+.social-button--facebook {
+  color: #3b5999;
+}
+
+.social-button--facebook::after {
+  background: #3b5999;
+}
+
+.social-button--linkedin {
+  color: #0077b5;
+}
+
+.social-button--linkedin::after {
+  background: #0077b5;
+}
+
+.social-button--github {
+  color: #6e5494;
+}
+
+.social-button--github::after {
+  background: #6e5494;
+}
+
+.social-button--instagram {
+  color: #e4405f;
+}
+
+.social-button--instagram::after {
+  background: #e4405f;
+}
+
+#column1 .introduction .hello{
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#column1 .introduction .name{
+  font-size: 2.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#column1 .introduction span{
+  font-weight: 700;
+  background: linear-gradient(45deg, #ff6ec4, #7873f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background 0.3s ease;
+}
+
+#column1 .introduction .name span:hover{
+  background: linear-gradient(225deg, #ff6ec4, #7873f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

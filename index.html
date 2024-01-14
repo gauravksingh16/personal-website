@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="style/navbar.css">
     <link rel="stylesheet" href="style/themetoggle.css">
     <link rel="stylesheet" href="style/threed.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style/video.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Font Awesome CSS -->
     <title>Gaurav K Singh</title>
     <script type="importmap">
@@ -77,7 +78,8 @@
                             <li><a href="#" class="dropdown-link">Project 3</a></li>
                         </ul>
                     </li>
-                    <li class="navbar-items"><a href="#about" class="navbar-link"><i class="fa fa-book"></i> Blogs</a>
+                    <li class="navbar-items"><a href="#about" class="navbar-link"><i class="fa fa-arrow-right"
+                                style="transform: rotate(-45deg);"></i> Freelance</a>
                     </li>
                 </ul>
                 <div class="hamburger">
@@ -94,13 +96,26 @@
         <div id="radial-bg"></div>
         <div class="content">
             <div class="column" id="column1">
-                <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aperiam id hic qui nesciunt, quod deleniti possimus voluptatum,
-                    laboriosam nisi perferendis voluptas rem dicta blanditiis consectetur
-                    eos labore repellat, sint fuga.
+                <div class="introduction">
+                    <div class="hello">
+                        Hello, I am
+                    </div>
+                    <div class="name">
+                        <span>Gaurav</span> Kumar Singh
+                    </div>
+                    <div class="cover-para">
+                        Passionate about crafting intuitive digital experiences through <span>Human-Centered
+                            Design</span>. With a strong foundation in <span>Web Development</span> and strategic
+                        <span>Marketing</span>, I bring a unique blend of aesthetics and functionality to projects.
+                        <br><br>Let's collaborate to transform ideas into compelling digital journeys.
+                    </div>
                 </div>
-                <button class="contact-button">Contact Me<span></span></button>
+                <div class="button-group">
+                    <button class="cta-button">Hire Me<span></span></button>
+                    <button class="action-button" title="Video CV"><i class="fa fa-play" title="Video CV"></i></button>
+                    <button class="action-button" title="Download Resume"><i class="fa fa-download"
+                            title="Download Resume"></i></button>
+                </div>
             </div>
             <div class="column" id="column2">
                 <div class="scroll-down">
@@ -110,13 +125,49 @@
                 </div>
             </div>
             <div class="column" id="column3">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
+                <div>
+                    <span>Connect with me</span>
+                </div>
+                <div class="social-buttons">
+                    <a href="#" class="social-button social-button--linkedin" aria-label="LinkedIn" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-button social-button--instagram" aria-label="Instagram" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-button social-button--github" aria-label="GitHub" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-button social-button--behance" aria-label="Behance" title="Behance">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                    <a href="#" class="social-button social-button--medium" aria-label="Medium" title="Medium">
+                        <i class="fab fa-medium"></i>
+                    </a>
+                    <a href="#" class="social-button social-button--mail" aria-label="Mail" title="Mail">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="#" class="social-button social-button--phone" aria-label="Phone" title="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
             </div>
         </div>
         <script type="module" src="script/threed.js"></script>
     </div>
+    <div class="second-section">
+        <div id="video-cv">
+            <div id="video-wrapper">
+                <div id="play">PLAY</div>
+                <video id="video-player" src="images/videoplayback.mp4" id="video"></video>
+            </div>
+            <script src="script/video.js"></script>
+        </div>
+    </div>
+    <div class="third-section">
+
+    </div>
+
     <script src="script/progressBar.js"></script>
     <script src="script/navbar.js"></script>
     <script src="script/script.js"></script>
