@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap');
 
 .threed-intro {
   /* position: absolute; */
@@ -345,6 +345,12 @@
   -webkit-text-fill-color: transparent;
   transition: background 0.3s ease;
 }
+
+#column1 .introduction .cover-para span{
+  font-family: 'Instrument Serif', serif;
+  font-size: 1.3rem;
+}
+
 
 #column1 .introduction .name span:hover{
   background: linear-gradient(225deg, #ff6ec4, #7873f5);

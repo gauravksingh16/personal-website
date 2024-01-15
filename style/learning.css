@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap");
+
+.learning-wrapper {
+    height: 100%;
+    width: 100%;
+    background: url("../images/line pattern.svg");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+}
+
+.learning-overlay {
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(ellipse at center, #16213e90, #16213e 65%);
+    position: absolute;
+    top: 0;
+}
+
+.learning-text {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    gap: 0;
+}
+
+.circle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    
+}
+
+.learning-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+.learning {
+  font-weight: 400;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.learning span {
+  font-family: "Instrument Serif", serif;
+  background: linear-gradient(45deg, #ff6ec4, #7873f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  font-size: 3.6rem;
+}
+
+.text-wrapper {
+    width: auto;
+    gap: 0.5rem;
+}
+
+.circular-desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px #16213e;
+    transition: transform 10s ease;
+}
+
+.circular-desc .learning-logo {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border: 1px solid #16213e;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0.2rem;
+}
+
+.circular-desc .learning-logo img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.circular-desc .school-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.circular-desc .school-text span {
+    position: absolute;
+    font-size: 0.6rem;
+    left: 50%;
+    transform-origin: 0 50px;
+    color: black;
+}
