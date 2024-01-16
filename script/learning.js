@@ -1,11 +1,10 @@
 document.querySelectorAll(".school-text").forEach((text) => {
   const letters = text.innerText.split("");
-  const angleGap = 360 / letters.length - 10;
+  const spacing = 10;
 
   text.innerHTML = letters
-    .map(
-      (char, i) =>
-        `<span style="transform:rotate(${i * angleGap}deg)">${char}</span>`
+    .map((char, i) =>
+      `<span style="transform:rotate(${i * spacing}deg);">${char}</span>`
     )
     .join("");
 });

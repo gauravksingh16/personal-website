@@ -77,7 +77,16 @@
     align-items: center;
     justify-content: center;
     box-shadow: 2px 2px 5px #16213e;
-    transition: transform 10s ease;
+}
+
+.circular-desc:hover {
+    cursor: pointer;
+    scale: 1.2;
+}
+
+.cert {
+    background: #ff6ec4;
+    color: white;
 }
 
 .circular-desc .learning-logo {
@@ -88,6 +97,7 @@
     border-radius: 50%;
     overflow: hidden;
     padding: 0.2rem;
+    background-color: white;
 }
 
 .circular-desc .learning-logo img {
@@ -96,6 +106,10 @@
     border-radius: 50%;
     background-size: cover;
     object-fit: cover;
+}
+
+.cert .learning-logo{
+    border: 1px solid white;
 }
 
 .circular-desc .school-text {
@@ -111,3 +125,8 @@
     transform-origin: 0 50px;
     color: black;
 }
+
+.cert .school-text span {
+    color: white; 
+ }
+ 
