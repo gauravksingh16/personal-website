@@ -260,6 +260,7 @@ nav {
   align-items: center;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 .musicbtn-background {
   background: linear-gradient(45deg, #ff6ec4, #7873f5);

@@ -2,6 +2,7 @@ var videocon = document.getElementById("video-wrapper");
 var playbtn = document.getElementById("play");
 var video = document.getElementById("video-player");
 
+
 videocon.addEventListener("mouseenter", function (event) {
   playbtn.style.opacity = 1;
   playbtn.style.scale = 1;
