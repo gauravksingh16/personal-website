@@ -43,6 +43,19 @@
 
             <div class="navbar-right">
                 <div class="wrapper">
+                    <div id="music-container">
+                        <audio id="background-music" volume="0.25" loop>
+                            <source src="images/Flying_Wings_mp3.mp3" type="audio/mp3">
+                        </audio>
+                        <div class="music-button active" id="musicButton">
+                            <div class="musicbtn-background" x="0" y="0" width="100" height="100"></div>
+                            <div class="playpause-icon" width="100" height="100">
+                                <div class="parte izquierda" x="0" y="0" width="100" height="100" fill="#fff"></div>
+                                <div class="parte derecha" x="0" y="0" width="100" height="100" fill="#fff"></div>
+                            </div>
+                            <div class="music-pointer"></div>
+                        </div>
+                    </div>
                     <input type="checkbox" id="hide-checkbox">
                     <label for="hide-checkbox" class="toggle">
                         <span class="toggle-button">
@@ -166,49 +179,51 @@
         </div>
     </div>
     <div class="third-section">
-        <div class="learning-wrapper">
-        </div>
-        <div class="learning-overlay">
-        </div>
-        <div class="learning-text">
-            <div class="text-wrapper">
-                <div class="learning-title">Educational Qualifications and Certifications</div>
-                <div class="learning">
-                    Finding <span>inspiration</span> in every lesson, <br>
-                    shaping not just my skills but the <br>
-                    essence of my <span>creative</span> journey.
+        <div class="third-wrapper">
+            <div class="learning-wrapper">
+            </div>
+            <div class="learning-overlay">
+            </div>
+            <div class="learning-text">
+                <div class="text-wrapper">
+                    <div class="learning-title">Educational Qualifications and Certifications</div>
+                    <div class="learning">
+                        Finding <span>inspiration</span> in every lesson, <br>
+                        shaping not just my skills but the <br>
+                        essence of my <span>creative</span> journey.
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="circle" id="circle">
-            <div class="circular-desc">
-                <div class="learning-logo"><img src="images/RMS_LOGO.png" alt=""></div>
-                <div class="school-text">
-                    <p>Higher Secondary</p>
+            <div class="circle" id="circle">
+                <div class="circular-desc">
+                    <div class="learning-logo"><img src="images/RMS_LOGO.png" alt=""></div>
+                    <div class="school-text">
+                        <p>Higher Secondary</p>
+                    </div>
                 </div>
-            </div>
-            <div class="circular-desc">
-                <div class="learning-logo"><img src="images/LPU_logo.png" alt=""></div>
-                <div class="school-text">
-                    <p>Undergraduation</p>
+                <div class="circular-desc">
+                    <div class="learning-logo"><img src="images/LPU_logo.png" alt=""></div>
+                    <div class="school-text">
+                        <p>Undergraduation</p>
+                    </div>
                 </div>
-            </div>
-            <div class="circular-desc cert">
-                <div class="learning-logo"><img src="images/google_logo.png" alt=""></div>
-                <div class="school-text">
-                    <p>UI/UX Course</p>
+                <div class="circular-desc cert">
+                    <div class="learning-logo"><img src="images/google_logo.png" alt=""></div>
+                    <div class="school-text">
+                        <p>UI/UX Course</p>
+                    </div>
                 </div>
-            </div>
-            <div class="circular-desc cert">
-                <div class="learning-logo"><img src="images/Wharton_Logo.jpeg" alt=""></div>
-                <div class="school-text">
-                    <p>Marketing</p>
+                <div class="circular-desc cert">
+                    <div class="learning-logo"><img src="images/Wharton_Logo.jpeg" alt=""></div>
+                    <div class="school-text">
+                        <p>Marketing</p>
+                    </div>
                 </div>
-            </div>
-            <div class="circular-desc cert">
-                <div class="learning-logo"><img src="images/Duke_logo.png" alt=""></div>
-                <div class="school-text">
-                    <p>Programming Fundamentals</p>
+                <div class="circular-desc cert">
+                    <div class="learning-logo"><img src="images/Duke_logo.png" alt=""></div>
+                    <div class="school-text">
+                        <p>Programming Fundamentals</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -217,7 +232,7 @@
 
     </div>
     <script src="script/learning.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="script/progressBar.js"></script>
     <script src="script/navbar.js"></script>
     <script src="script/script.js"></script>

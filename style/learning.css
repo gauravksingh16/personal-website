@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap");
 
+.third-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
 .learning-wrapper {
     height: 100%;
     width: 100%;

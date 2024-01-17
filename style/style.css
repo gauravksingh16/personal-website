@@ -55,19 +55,22 @@ div.clickEffect{
 }
 
 .second-section {
+    min-width: 100vh;
     width: 100vw;
     background: linear-gradient(to top,#16213e, #1a1a2e);
 }
 
 .third-section {
-    margin: 0;
-    padding: 0;
     height: 100vh;
     width: 100vw;
     background: linear-gradient(to top, #1a1a2e ,#16213e);
     color: white;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
+}
+
+.fourth-section {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top, #1a1a2e ,#16213e);
+    color: white;
 }
 
