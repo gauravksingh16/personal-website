@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
       gsap.to(div, {
           left: randomBetween(0, maxX),
           top: randomBetween(0, maxY),
-          duration: 3,
+          duration: randomBetween(2, 5),
           ease: "power2.out",
           onComplete: function () {
               moveRandomly(div);

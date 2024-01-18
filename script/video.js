@@ -1,7 +1,8 @@
 var videocon = document.getElementById("video-wrapper");
 var playbtn = document.getElementById("play");
 var video = document.getElementById("video-player");
-
+const musicBtn = document.getElementById("musicButton");
+const audioplay = document.getElementById("background-music");
 
 videocon.addEventListener("mouseenter", function (event) {
   playbtn.style.opacity = 1;
@@ -22,10 +23,15 @@ videocon.addEventListener("mousemove", function (event) {
 
 videocon.addEventListener("click", function (event) {
   if (video.paused) {
+    musicBtn.classList.toggle("active");
+    audioplay.pause();
     video.play();
     playbtn.innerHTML = "PAUSE"
   } else {
+    musicBtn.classList.toggle("active");
     video.pause();
+    audioplay.play();
+    audioplay.volume = 0.25
     playbtn.innerHTML = "PLAY"
   }
 });

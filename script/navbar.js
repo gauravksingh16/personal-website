@@ -43,14 +43,39 @@ const audio = document.getElementById("background-music");
 
 window.addEventListener("load", function () {
   audio.play();
+  audio.volume = 0.25
+  console.log(audio.play());
 });
 
 musicButton.addEventListener("click", function () {
   this.classList.toggle("active");
 
   if (audio.paused) {
-    audio.play(); // If paused, play the audio
+    audio.play();
+    audio.volume = 0.25 // If paused, play the audio
   } else {
     audio.pause(); // If playing, pause the audio
   }
 });
+
+const body = document.body;
+let lastScroll = 0;
+
+window.addEventListener('scroll', () => {
+  const currentScroll = window.scrollY
+  if (currentScroll <= 0) {
+    body.classList.remove("scroll-up");
+  }
+
+  if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+    body.classList.remove("scroll-up")
+    body.classList.add("scroll-down")
+  }
+
+  if (currentScroll < lastScroll && body.classList.contains("scroll-down")) {
+    body.classList.add("scroll-up")
+    body.classList.remove("scroll-down")
+  }
+
+  lastScroll = currentScroll
+})

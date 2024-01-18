@@ -26,6 +26,15 @@ body {
     right: 0;
     left: 0;
     z-index: 999;
+    transition: all .5s ease-in-out;
+}
+
+.scroll-down nav {
+    transform: translateY(-100%);
+}
+
+.scroll-up nav {
+    transform: translateY(0);
 }
 
 div.clickEffect{
