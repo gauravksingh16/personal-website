@@ -80,6 +80,23 @@
     backdrop-filter: blur(1rem);
     padding: 0.3rem;
     display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 3.3rem;
+    transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.projects .project-desc:hover{
+  height: auto;
+  border-radius: 15px;
+  gap: 1rem;
+  background-color: white;
+}
+
+.projects .project-desc .desc-hlight {
+    text-align: center;
+    cursor: pointer;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -114,8 +131,12 @@
 
 .projects .project-desc .desc-title {
     padding: 1rem;
+    font-weight: 500;
 }
 
+.projects .project-desc .desc-text {
+  padding: 1rem;
+}
 
 
 
