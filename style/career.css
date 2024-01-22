@@ -77,7 +77,7 @@
     transform: translate(-50%, -50%);
     z-index: 2;
     color: black;
-    backdrop-filter: blur(2rem);
+    backdrop-filter: blur(1rem);
     padding: 0.3rem;
     display: flex;
     justify-content: space-between;
@@ -90,7 +90,12 @@
     width: 3rem;
     border-radius: 50%;
     text-align: center;
-    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.projects .project-desc .view-link a{
+    text-decoration: none;
+    color: black;
 }
 
 .projects .project-desc .view-link div {
@@ -100,10 +105,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease-in-out;
 }
 
 .projects .project-desc .view-link:hover div{
     transform: rotate(-45deg);
+}
+
+.projects .project-desc .desc-title {
+    padding: 1rem;
 }
 
 
