@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap");
+
+.career-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.career-segment {
+  display: flex;
+  background-color: white;
+  border-radius: 100px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2rem;
+  width: 45vw;
+  box-shadow: #16213e2c;
+}
+
+.segment {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  color: rgba(0, 0, 0, 0.5);
+  border-radius: 100px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.segment:not(.active):hover {
+  background: linear-gradient(#1a1a2e2c, #16213e2c);
+  color: black;
+}
+
+.segment.active {
+  background: linear-gradient(45deg, #ff6ec4, #7873f5);
+  color: white;
+  letter-spacing: 0.1rem;
+}
+
+.project-showcase {
+  display: flex;
+  padding: 10px 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects {
+  height: 70vh;
+  width: 32%;
+  border-radius: 15px;
+  background-color: #ff6ec4;
+  overflow: hidden;
+  position: relative;
+}
+
+.projects img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.projects:hover img {
+  transform: scale(1.05);
+}
+
+.projects .project-desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    border-radius:100px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: black;
+    backdrop-filter: blur(2rem);
+    padding: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects .project-desc .view-link {
+    border: 1px solid black;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.projects .project-desc .view-link div {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects .project-desc .view-link:hover div{
+    transform: rotate(-45deg);
+}
+
+
+
+
+

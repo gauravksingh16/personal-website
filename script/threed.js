@@ -41,13 +41,13 @@ loader.load('model.glb', function(glb){
     console.error(error)
 })
 
-const directionalLight = new THREE.DirectionalLight(0x7873f5, 0.3)
+const directionalLight = new THREE.DirectionalLight(0x7873f5, 1)
 scene.add(directionalLight)
 directionalLight.position.set(-20, 0, -20)
 directionalLight.castShadow = true
 directionalLight.shadow.camera.bottom = -12
 
-const fillLight = new THREE.PointLight(0x88b2d9, 10, 3, 2)
+const fillLight = new THREE.PointLight(0x88b2d9, 12, 6, 2)
 fillLight.position.set(30,3,1.8)
 scene.add(fillLight)
 
