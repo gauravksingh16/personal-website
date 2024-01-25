@@ -17,3 +17,18 @@ segments.forEach((segment) => {
     }
   });
 });
+
+
+function showProject(args){
+  const projects = document.querySelectorAll(".project-layer")
+
+  projects.forEach((project) => {
+    if (project.classList.contains(args)) {
+      project.classList.remove("hidden");
+    }
+    else{
+      project.classList.add("hidden");
+    }
+
+  })
+}

@@ -112,24 +112,27 @@ nav {
   position: absolute;
   top: calc(100% + 2px);
   left: 0;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(25px);
+  background-color: rgba(255, 255, 255, 0.39);
+  backdrop-filter: blur(0.5rem);
   box-shadow: #1a1a2e;
   padding: 10px;
   border-radius: 0 5px 5px 5px;
-  width: 100px;
+  width: auto;
   display: none;
+  text-align: left;
+  transition: all linear 0.3s;
 }
 
 .dropdown:hover .dropdown-menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: flex-start;
 }
 
 .dropdown-menu li {
   margin-bottom: 5px;
+  text-align: left;
 }
 
 .dropdown-menu li a {
@@ -575,7 +578,8 @@ nav {
   /* border: 2px solid white; */
 
   border: 2px solid transparent;
-	background: linear-gradient(#16213e , #16213e ) padding-box, linear-gradient(45deg, #ff6ec4, #7773f519) border-box;
+  background: linear-gradient(#16213e, #16213e) padding-box,
+    linear-gradient(45deg, #ff6ec4, #7773f519) border-box;
   animation: rotateAnimation 3s linear infinite;
 }
 

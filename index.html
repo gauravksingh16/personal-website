@@ -24,7 +24,6 @@
           }
         }
     </script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="script/script.js"></script>
 
@@ -39,7 +38,7 @@
         <nav>
             <div class="navbar-left">
                 <div class="logo">
-                    <a href="#">gks</a>
+                    <a href="index.html">gks</a>
                 </div>
             </div>
 
@@ -81,7 +80,7 @@
                 </div>
 
                 <ul class="navbar-menu">
-                    <li class="navbar-items active"><a href="#home" class="navbar-link"><i class="fa fa-home"></i>
+                    <li class="navbar-items active"><a href="index.html" class="navbar-link"><i class="fa fa-home"></i>
                             Home</a></li>
                     <li class="navbar-items"><a href="#about" class="navbar-link"><i class="fa fa-user"></i> About
                             Me</a></li>
@@ -89,9 +88,9 @@
                         <a href="#projects" class="dropdown-toggle"><i class="fa fa-briefcase"></i> Projects <i
                                 class="fas fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" class="dropdown-link">Project 1</a></li>
-                            <li><a href="#" class="dropdown-link">Project 2</a></li>
-                            <li><a href="#" class="dropdown-link">Project 3</a></li>
+                            <li><a href="#" class="dropdown-link">Programming</a></li>
+                            <li><a href="#" class="dropdown-link">Designing</a></li>
+                            <li><a href="#" class="dropdown-link">Marketing</a></li>
                         </ul>
                     </li>
                     <li class="navbar-items"><a href="#about" class="navbar-link"><i class="fa fa-arrow-right"
@@ -127,7 +126,9 @@
                     </div>
                 </div>
                 <div class="button-group">
-                    <button class="cta-button">Hire Me<span></span></button>
+                    <a href="https://calendly.com/gauravksingh16/30min" target="_blank">
+                        <button class="cta-button">Hire Me<span></span></button>
+                    </a>
                     <button class="action-button" title="Video CV"><i class="fa fa-play" title="Video CV"></i></button>
                     <button class="action-button" title="Download Resume"><i class="fa fa-download"
                             title="Download Resume"></i></button>
@@ -145,25 +146,25 @@
                     <span>Connect with me</span>
                 </div>
                 <div class="social-buttons">
-                    <a href="#" class="social-button social-button--linkedin" aria-label="LinkedIn" title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/gauravksingh16/" class="social-button social-button--linkedin" target="_blank" aria-label="LinkedIn" title="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="#" class="social-button social-button--instagram" aria-label="Instagram" title="Instagram">
+                    <a href="https://www.instagram.com/gauravksingh_/" class="social-button social-button--instagram" target="_blank" aria-label="Instagram" title="Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="#" class="social-button social-button--github" aria-label="GitHub" title="GitHub">
+                    <a href="https://github.com/gauravksingh16" class="social-button social-button--github" target="_blank" aria-label="GitHub" title="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="#" class="social-button social-button--behance" aria-label="Behance" title="Behance">
+                    <a href="https://www.behance.net/gauravsingh_16/" class="social-button social-button--behance" target="_blank" aria-label="Behance" title="Behance">
                         <i class="fab fa-behance"></i>
                     </a>
-                    <a href="#" class="social-button social-button--medium" aria-label="Medium" title="Medium">
+                    <a href="https://medium.com/@gauravksingh16" class="social-button social-button--medium" target="_blank" aria-label="Medium" title="Medium">
                         <i class="fab fa-medium"></i>
                     </a>
-                    <a href="#" class="social-button social-button--mail" aria-label="Mail" title="Mail">
+                    <a href="mailto:gauravkumarsingh3360@gmail.com" class="social-button social-button--mail" aria-label="Mail" title="Mail">
                         <i class="fas fa-envelope"></i>
                     </a>
-                    <a href="#" class="social-button social-button--phone" aria-label="Phone" title="Phone">
+                    <a href="tel:917970755957" class="social-button social-button--phone" aria-label="Phone" title="Phone">
                         <i class="fas fa-phone"></i>
                     </a>
                 </div>
@@ -233,13 +234,13 @@
     <div class="fourth-section">
         <div class="career-wrapper">
             <div class="career-segment">
-                <div class="segment">
+                <div class="segment" onclick="showProject('marketing')">
                     <div class="career-text">Marketing</div>
                 </div>
-                <div class="segment active">
+                <div class="segment active" onclick="showProject('programming')">
                     <div class="career-text">Programming</div>
                 </div>
-                <div class="segment">
+                <div class="segment" onclick="showProject('designing')">
                     <div class="career-text">Designing</div>
                 </div>
             </div>
@@ -326,7 +327,7 @@
                     </div>
                 </div>
                 <div id="project2" class="projects">
-                    <img src="https://i.redd.it/apwxx60p6nc71.jpg" alt="">
+                    <img src="https://blog.hubspot.com/hs-fs/hubfs/marketing-plan-examples_1.webp?width=595&height=400&name=marketing-plan-examples_1.webp" alt="">
                     <div class="project-desc">
                         <div class="desc-hlight">
                             <div class="desc-title">
@@ -344,7 +345,65 @@
                     </div>
                 </div>
                 <div id="project3" class="projects">
-                    <img src="https://i.redd.it/apwxx60p6nc71.jpg" alt="">
+                    <img src="https://blog.hubspot.com/hs-fs/hubfs/marketing-plan-examples_1.webp?width=595&height=400&name=marketing-plan-examples_1.webp" alt="">
+                    <div class="project-desc">
+                        <div class="desc-hlight">
+                            <div class="desc-title">
+                                Coming Soon
+                            </div>
+                            <div class="view-link">
+                                <div>
+                                    <i class="fa fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-layer designing hidden">
+                <div id="project1" class="projects">
+                    <img src="images/pitch_deck_bg.png" alt="">
+                    <div class="project-desc">
+                        <div class="desc-hlight">
+                            <div class="desc-title">
+                                Pitch Deck
+                            </div>
+                            <div class="view-link">
+                                <div>
+                                    <a target="_blank" href="https://www.behance.net/gauravsingh_16/services/202581/Pitch-Deck"><i
+                                            class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc-text">
+                            From captivating designs to compelling content, I starve to transform visions into success stories.
+                        </div>
+                    </div>
+                </div>
+                <div id="project2" class="projects">
+                    <img src="https://www.avanse.com/blogs/images/next-top-47.jpg" alt="">
+                    <div class="project-desc">
+                        <div class="desc-hlight">
+                            <div class="desc-title">
+                                Coming Soon
+                            </div>
+                            <div class="view-link">
+                                <div>
+                                    <i class="fa fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                        </div>
+                    </div>
+                </div>
+                <div id="project3" class="projects">
+                    <img src="https://www.avanse.com/blogs/images/next-top-47.jpg" alt="">
                     <div class="project-desc">
                         <div class="desc-hlight">
                             <div class="desc-title">
