@@ -78,16 +78,16 @@ div.clickEffect{
 }
 
 .fourth-section {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background: linear-gradient(to top, #1a1a2e ,#16213e);
     color: white;
 }
 
 .fifth-section {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
-    background: linear-gradient(to bottom, #1a1a2e ,#16213e);
+    background: linear-gradient(at bottom, #1a1a2e ,#16213e);
     color: white;
 }
 

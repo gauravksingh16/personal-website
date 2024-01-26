@@ -44,7 +44,6 @@ const audio = document.getElementById("background-music");
 window.addEventListener("load", function () {
   audio.play();
   audio.volume = 0.25
-  console.log(audio.play());
 });
 
 musicButton.addEventListener("click", function () {
