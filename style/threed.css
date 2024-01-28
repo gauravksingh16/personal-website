@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   background: linear-gradient(to left, #1a1a2e, #16213e);
+  overflow: hidden;
 }
 
 #threed {
@@ -60,8 +61,12 @@
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  align-items: center;
+  justify-content: center;
 }
-
+#column1 .button-group a {
+  text-decoration: none;
+}
 #column2 {
   width: 20%;
   overflow-y: scroll;
@@ -144,7 +149,8 @@
 }
 
 #column1 .cta-button {
-  display: inline-block;
+  display: block;
+  height: 3rem;
   padding: 0.75rem 2rem;
   border: 0.0625rem solid white;
   text-decoration: none;
