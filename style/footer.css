@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+
+.copyright {
+  padding: 10px 40px;
+  border-top: 2px solid rgba(255, 255, 255, 0.222);
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.footer-wrapper {
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.footer-content {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: stretch;
+  width: 45vh;
+}
+
+.newsletter form {
+  border-bottom: 1px solid rgba(239, 234, 227, 0.3);
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-field {
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 0;
+  padding: 1em 0;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  outline: none;
+}
+
+.text-field::placeholder {
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.submit-button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.submit-button svg {
+  fill: white;
+  transition: all 0.1s ease-in-out;
+}
+
+.submit-button:hover svg {
+  transform: rotate(-45deg);
+}
+
+footer .footer-title {
+  display: flex;
+  font-size: 9.35rem;
+  font-weight: 700;
+  padding: 0 40px;
+  text-transform: uppercase;
+  margin: 0;
+  align-items: start;
+  justify-content: baseline;
+  font-family: "Oswald", sans-serif;
+  line-height: 1;
+  background: linear-gradient(315deg, #ffffff, #ffffff4c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}

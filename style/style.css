@@ -92,7 +92,7 @@ div.clickEffect{
 }
 
 footer {
-    min-height: 50vh;
+    min-height: 40vh;
     width: 100vw;
     background: linear-gradient(45deg, #ff6ec4, #7873f5);
     color: white;
