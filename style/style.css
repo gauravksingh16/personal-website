@@ -27,6 +27,7 @@ body {
     left: 0;
     z-index: 999;
     transition: all .5s ease-in-out;
+    width: 100vw;
 }
 
 .scroll-down nav {

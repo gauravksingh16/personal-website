@@ -26,6 +26,7 @@ videocon.addEventListener("click", function (event) {
     musicBtn.classList.toggle("active");
     audioplay.pause();
     video.play();
+    video.muted = false
     playbtn.innerHTML = "PAUSE"
   } else {
     musicBtn.classList.toggle("active");

@@ -3,7 +3,6 @@
 .copyright {
   padding: 10px 40px;
   border-top: 2px solid rgba(255, 255, 255, 0.222);
-  width: 100%;
   font-size: 0.8rem;
 }
 
@@ -98,4 +97,9 @@ footer .footer-title {
     color: #ffffff;
     font-weight: 700;
     letter-spacing: 0.1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-menu a:hover {
+    letter-spacing: 0.3rem;
 }

@@ -3,6 +3,7 @@
     background-color: #5757572a;
     height: 5px;
     display: block;
+    backdrop-filter: blur(1rem);
 }
 
 .progress-bar {

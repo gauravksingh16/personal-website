@@ -17,6 +17,7 @@
   padding: 0.2rem;
   width: 45vw;
   box-shadow: #16213e2c;
+  overflow: hidden;
 }
 
 .segment {
