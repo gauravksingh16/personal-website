@@ -39,6 +39,29 @@ function setupVideoControls() {
   });
 }
 
+function togglePlay() {
+  playbtn.addEventListener("click", function () {
+    if (video.paused) {
+      musicBtn.classList.toggle("active");
+      audioplay.pause();
+      video.play();
+      video.muted = false;
+      playbtn.innerHTML = "PAUSE";
+      video.style.filter = "none";
+    } else {
+      musicBtn.classList.toggle("active");
+      video.pause();
+      audioplay.play();
+      audioplay.volume = 0.25;
+      playbtn.innerHTML = "PLAY";
+      video.style.filter = grayscale(1);
+    }
+  });
+}
+
 if(screen.width > 890) {
   setupVideoControls();
+}
+else {
+  togglePlay();
 }

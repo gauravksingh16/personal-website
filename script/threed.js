@@ -37,6 +37,8 @@ loader.load('model.glb', function(glb){
     }
     scene.add(model)
     model.position.y = -1.5
+
+    animate();
 }, undefined, function(error){
     console.error(error)
 })
@@ -60,7 +62,7 @@ function animate(){
     renderer.setAnimationLoop(animate)
 }
 
-animate();
+
 
 // Add event listener for mousemove
 window.addEventListener('mousemove', onMouseMove);
@@ -86,11 +88,7 @@ function onMouseMove(event) {
     model.rotation.y = rotationAngle;
 }
 
-// Event listener for window resize
 window.addEventListener('resize', function () {
-    sizes.width = window.innerWidth;
-    sizes.height = window.innerHeight;
-
     camera.aspect = sizes.width / sizes.height;
     camera.updateProjectionMatrix();
 
