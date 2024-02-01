@@ -1,6 +1,17 @@
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 2,
-  spaceBetween: 50,
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+    1440: {
+      slidesPerView: 4,
+    }
+  }
 });
 
 var swipeContainer = document.querySelector(".swiper");

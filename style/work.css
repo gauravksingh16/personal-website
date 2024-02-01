@@ -10,12 +10,8 @@
   width: auto;
   color: white;
   overflow: hidden;
-  padding: 10px 40px !important;
+  padding: 10px 40px 40px 40px !important;
   transition: all 0.3s ease-in-out;
-}
-
-swiper-wrapper {
-    padding: 40px 40px;
 }
 
 
@@ -57,3 +53,31 @@ swiper-wrapper {
     opacity: 0;
     transition: opacity 0.5s ease, scale 0.5s ease;
 }
+
+@media screen and (max-width: 890px) {
+    #mouse-navigator {
+        display: none;
+    }
+
+    .work-title {
+      padding: 20px;
+      font-size: 0.8rem;
+    }
+
+    .swiper {
+      padding: 10px 20px !important;
+    }
+
+    .company-logo img{
+      height: 2rem;
+    }
+
+    .swiper-slide {
+      font-size: 0.7rem;
+    }
+
+    .work-desc {
+      padding-right: 20px;
+    }
+}
+
