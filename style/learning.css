@@ -48,6 +48,7 @@
     font-weight: 400;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.5);
+    text-align: center;
   }
 
 .learning {
@@ -66,7 +67,7 @@
 }
 
 .text-wrapper {
-    width: auto;
+    width: 60%;
     gap: 0.5rem;
 }
 
@@ -135,3 +136,25 @@
     color: white; 
  }
  
+
+ @media screen and (max-width: 890px) {
+    
+    .learning-text .text-wrapper {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .learning-title {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .learning {
+        font-size: 1.8rem;
+    }
+
+    .learning span {
+        font-size: 2.1rem;
+    }
+
+}
