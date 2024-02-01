@@ -83,6 +83,7 @@ div.clickEffect{
     width: 100vw;
     background: linear-gradient(to top, #1a1a2e ,#16213e);
     color: white;
+    position: relative;
 }
 
 .fifth-section {
