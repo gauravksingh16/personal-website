@@ -183,6 +183,7 @@ nav {
 @media screen and (max-width: 890px) {
   nav {
     padding: 10px 20px;
+    position: relative;
   }
 
   .navbar-right {
@@ -213,8 +214,8 @@ nav {
   }
 
   .navbar-menu {
-    position: fixed;
-    width: 100vw;
+    position: absolute;
+    width: 100%;
     height: 0;
     top: 3.2rem;
     flex-direction: column;
@@ -233,8 +234,10 @@ nav {
 
   .navbar-menu.active {
     height: auto;
+    padding: 0;
     left: 0;
-    top: 3.2rem;
+    top: 3.4rem;
+    background-color: #1a1a2e;
     display: flex;
     justify-content: center;
     align-items: center;
