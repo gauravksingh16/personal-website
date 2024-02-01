@@ -18,7 +18,6 @@
 .footer-content {
   padding: 40px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -76,8 +75,8 @@ footer .footer-title {
   padding: 0 40px;
   text-transform: uppercase;
   margin: 0;
-  align-items: start;
-  justify-content: baseline;
+  align-items: baseline;
+  justify-content: center;
   font-family: "Oswald", sans-serif;
   line-height: 1;
   background: linear-gradient(315deg, #ffffff, #ffffff4c);
@@ -102,4 +101,28 @@ footer .footer-title {
 
 .footer-menu a:hover {
     letter-spacing: 0.3rem;
+}
+
+@media  screen and (max-width: 890px) {
+
+  .footer-content {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding: 40px 20px;
+  }
+
+  .newsletter {
+    width: 100%;
+  }
+
+  .footer-title {
+    font-size: 4.5rem !important;
+    padding: 10px 20px !important;
+  }
+  
+  .copyright {
+    padding: 10px 20px;
+    text-align: center;
+  }
 }

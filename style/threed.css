@@ -9,15 +9,17 @@
   padding: 0;
   background: linear-gradient(to left, #1a1a2e, #16213e);
   overflow: hidden;
+  position: relative;
 }
 
 #threed {
   position: absolute;
   z-index: 2;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   margin: 0;
   display: block;
+  overflow: hidden;
 }
 
 #radial-bg {
@@ -410,5 +412,10 @@
   #column3 {
     align-items: center;
   }
+
+  #radial-bg {
+    background: radial-gradient(circle at top, #1a1a2e00, #1a1a2e 50%);
+  }
+  
   
 }

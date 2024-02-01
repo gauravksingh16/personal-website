@@ -89,10 +89,16 @@ function onMouseMove(event) {
 }
 
 window.addEventListener('resize', function () {
-    camera.aspect = sizes.width / sizes.height;
+    camera.aspect = window.innerWidth / window.innerHeight;
+
+    // update the camera's frustum
     camera.updateProjectionMatrix();
 
-    renderer.setSize(sizes.width, sizes.height);
+    // update the size of the renderer AND the canvas
+    renderer.setSize(window.innerWidth, window.innerHeight);
+
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+    renderer.render(scene, camera)
 });
 
 
